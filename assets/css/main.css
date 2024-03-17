@@ -2,7 +2,8 @@ body{
 	background-color: #ededed;
 	font-family: 'Oswald';
 	position: relative;
-	margin-top: 0;
+	margin: 0;
+
 }
 
 /*======================================================================
@@ -67,6 +68,7 @@ body{
 	background-color: transparent;
 	color: #fabe12;
 	border-color: #fabe12;
+	font-weight: bold;
 }
 
 
@@ -77,15 +79,19 @@ body{
 =======================================================================*/
 .site-header-bg{
 	width: 100%;
-	background-color: #111;
+	background-color: #eee;
 	z-index: 1;
-	padding: 30px 0;
+	padding-top: 5px;
 	color: #fff;
+	justify-content: center;
 	text-transform: uppercase;
 	font-family: 'Roboto';
 }
+.site-header-bg .container {
+  width: 100%;
+}
 .site-header-bg .input-group{
-	padding-top: 10px;
+	padding-top: 0px;
 }
 .site-header-bg .form-control{
 	border-radius: 0;
@@ -111,7 +117,7 @@ body{
 	text-align: center;
 	color: #fff;
 	letter-spacing: 3px;
-	background: #111;
+	background: #eee;
 	position: relative;
 }
 .header-quote{
@@ -132,7 +138,29 @@ body{
 }
 .intro{
 	  padding: 200px 0;
-    background-image: url(../images/header.jpg);
+    background-image: url(../images/home.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: -90px;
+    z-index: 11;
+    position: relative;
+    transition: background-image 1.5s linear;
+}
+.intro2{
+	  padding: 200px 0;
+    background-image: url(../images/Manufacturing.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: -90px;
+    z-index: 11;
+    position: relative;
+    transition: background-image 1.5s linear;
+}
+.intro3{
+	  padding: 200px 0;
+    background-image: url(../images/distribution.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -153,8 +181,8 @@ body{
     border-bottom-right-radius: 0;
 }
 .navbar-default{
-	border-color: #262626;
-    background-color: #111;
+	border-color: #eee;
+  background-color: #eee;
 }
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
 	color: #fabe12;
@@ -242,25 +270,41 @@ body{
 .product .section-bg{
 	background-color: #fff;
 }
-.porduct-box{
+.product-box{
 	margin-bottom: 30px;
+	display: flex;
+	flex-wrap: wrap;
 	position: relative;
 }
-.porduct-box img{
+.product-box img{
+
 	width: 100% !important;
 }
 .product-title{
-	position: absolute;
+	  position: absolute;
     top: 5px;
     left: 25px;
     right: 25px;
     padding: 15px;
-    background-color: #fabe12;
+    background-color: rgba(250, 190, 18, 0.7);
     text-transform: uppercase;
     color: #fff;
     text-align: center;
     font-weight: 300;
 }
+.product-content{
+	  position: absolute;
+    top: 100px;
+    left: 25px;
+    right: 25px;
+    padding: 15px;
+    background-color: rgba(15, 10, 10, 0.7);
+    font-size: 30px;
+
+    text-align: center;
+    height: 80%;
+}
+
 .classic-title{
 	margin-top: 100px;
 	text-transform: uppercase;
@@ -295,13 +339,13 @@ body{
 	position: relative;
 }
 .product p{
-	color: #999;
-	font-size: 14px;
+	color: #fff;
+	font-size: 18px;
 	text-align: justify;
 	margin-bottom: 30px;
 }
 .product p.p-large{
-	font-size: 16px;
+	font-size: 20px;
 	font-weight: 400;
 }
 @media (min-width: 768px){
@@ -309,15 +353,37 @@ body{
 		padding: 0 80px;
 	}
 }
-
-
-
+@media (max-width: 768px){
+	.product p{
+	margin-top: -5px;
+	color: #fff;
+	font-size: 15px;
+	text-align: justify;
+	margin-bottom: 5px;
+}
+}
+@media (max-width: 568px){
+	.product p{
+	color: #fff;
+	font-size: 10px;
+	text-align: justify;
+	margin-bottom: 5px;
+}
+  .product-title{margin-top: -12px}
+  .product-content{
+  	margin-top: -60px;
+  	height: 90%;
+  }
+  .product-box{height: 120%}
+}
+ 
 
 /*======================================================================
 ##		History Section
 =======================================================================*/
+
 .history .section-bg{
-	background-color: #111;
+	background-color: #222;
 	text-align: center;
 }
 .history p{
@@ -336,7 +402,7 @@ body{
 ##		Partner Section
 =======================================================================*/
 .partner .section-bg{
-	background-color: #fff;
+	background-color: #eee;
 	text-align: center;
 	padding-bottom: 80px;
 }
@@ -366,7 +432,7 @@ body{
 	height: 100%;
 	top: 0;
 	left: 0;
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(1, 0, 0, 0.6);
 }
 .inner-header .breadcrumb{
 	margin-bottom: 0;
@@ -393,17 +459,16 @@ body{
 .intro{
 	background-color: #313131;
 }
-.faq-header .intro{
-	background-image: url(../images/faq-header.jpg);
-}
+
 .shop-header .intro{
-	background-image: url(../images/shop-header.jpg);
+	padding: -10px;
+	background-image: url(../images/home.png);
 }
 .contact-header .intro{
 	background-image: url(../images/contact-header.jpg);
 }
 .about-header .intro{
-	background-image: url(../images/about-header.jpg);
+	background-image: url(../images/home.png);
 }
 .about .page-bgc{
 	padding-bottom: 0;
@@ -448,7 +513,7 @@ body{
     font-family: 'ionicons';
     content: "\f126";
     position: absolute;
-    right: 15px;
+    right: 55px;
     font-size: 18px;
     color: #111;
   }
@@ -695,9 +760,9 @@ body{
 		padding: 0 95px;
 	}
 	.machine-man .row{
-		background-image: url(../images/machine-man.png);
+		background-image: url(../images/hongkong1.jpg);
 		background-repeat: no-repeat;
-		background-position: right 60px bottom 0;
+		background-position: left 60px bottom -60px;
 	}
 }
 /*Team*/
