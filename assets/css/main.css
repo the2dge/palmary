@@ -149,7 +149,7 @@ body{
 }
 .intro2{
 	  padding: 200px 0;
-    background-image: url(../images/Manufacturing.jpg);
+    background-image: url(../images/manufacturing1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -274,6 +274,7 @@ body{
 	margin-bottom: 30px;
 	display: flex;
 	flex-wrap: wrap;
+	height: 100vh;
 	position: relative;
 }
 .product-box img{
@@ -357,25 +358,12 @@ body{
 	.product p{
 	margin-top: -5px;
 	color: #fff;
-	font-size: 15px;
+	font-size: 17px;
 	text-align: justify;
 	margin-bottom: 5px;
 }
 }
-@media (max-width: 568px){
-	.product p{
-	color: #fff;
-	font-size: 10px;
-	text-align: justify;
-	margin-bottom: 5px;
-}
-  .product-title{margin-top: -12px}
-  .product-content{
-  	margin-top: -60px;
-  	height: 120%;
-  }
-  .product-box{height: 120%}
-}
+
  
 
 /*======================================================================
@@ -475,10 +463,44 @@ body{
 	padding-bottom: 0;
 }
 
-
-
-
-
+.product-box.distribution{
+	background-image: url(../images/warehouse.jpg);
+	background-size: cover;
+}
+.product-box.manufacture{
+	background-image: url(../images/machine.jpg);
+	background-size: cover;
+}
+@media(max-width: 420px){
+	.product-box.distribution{
+  height: 200vh;
+	position: relative;
+}
+}
+@media(max-width: 420px){
+	.product-box.manufacture{
+  height: 150vh;
+	position: relative;
+}
+}
+@media(max-width: 520px){
+	.product-box.distribution{
+  height: 146vh;
+	position: relative;
+}
+}
+@media(max-width: 768px){
+	.product-box{
+  height: 116vh;
+	position: relative;
+}
+}
+@media(max-width: 890px){
+	.product-box{
+  height: 110vh;
+	position: relative;
+}
+}
 /*======================================================================
 ##		FAQ
 =======================================================================*/
