@@ -71,7 +71,10 @@ body{
 	font-weight: bold;
 }
 
-
+sup {
+  font-size: 0.6em; /* Adjust the size of the superscript */
+  vertical-align: super; /* Align the superscript text vertically */
+}
 
 
 /*======================================================================
@@ -364,8 +367,12 @@ body{
 }
 }
 
- 
-
+@media (max-width: 460px) {
+  .img-responsive {
+    width: 130%; /* Makes the image fill the container */
+    height: auto; /* Maintains the aspect ratio */
+  }
+}
 /*======================================================================
 ##		History Section
 =======================================================================*/
@@ -399,7 +406,9 @@ body{
 	color: #111;
 }
 
-
+.round-corner{
+	border-radius: 20px;
+}
 
 
 /*======================================================================
@@ -458,6 +467,8 @@ body{
 }
 .about-header .intro{
 	background-image: url(../images/home.png);
+	background-size: cover;
+
 }
 .about .page-bgc{
 	padding-bottom: 0;
@@ -465,10 +476,18 @@ body{
 
 .product-box.distribution{
 	background-image: url(../images/warehouse.jpg);
-	background-size: cover;
+	background-size: contain;
 }
 .product-box.manufacture{
 	background-image: url(../images/machine.jpg);
+	background-size: contain;
+}
+.product-box.homepageManu{
+	background-image: url(../images/manufacturing.jpg);
+	background-size: cover;
+}
+.product-box.homepageDist{
+	background-image: url(../images/distribution.jpg);
 	background-size: cover;
 }
 @media(max-width: 420px){
@@ -501,6 +520,7 @@ body{
 	position: relative;
 }
 }
+
 /*======================================================================
 ##		FAQ
 =======================================================================*/
