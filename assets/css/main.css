@@ -409,7 +409,17 @@ sup {
 .round-corner{
 	border-radius: 20px;
 }
-
+.owl-carousel .item img.round-corner {
+    width: 100px; /* Adjust the width as needed */
+    height: auto; /* This keeps the aspect ratio intact */
+    /* You can also use max-width in place of width to make it more responsive */
+}
+.owl-carousel .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Ensure this is set so that align-items has an effect */
+}
 
 /*======================================================================
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
