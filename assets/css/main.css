@@ -80,7 +80,15 @@ sup {
 /*======================================================================
 ##		Header Section
 =======================================================================*/
+#logoHeader{
 
+	position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0;
+  z-index: 999; 
+  transition: 0.5s;
+  padding-bottom: 5px;
+} 
 .site-header-bg{
 	width: 100%;
 	background-color: #eee;
@@ -374,7 +382,13 @@ sup {
     height: auto; /* Maintains the aspect ratio */
   }
 }
-
+@keyframes flash {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+.btn-flash {
+  animation: flash 3s infinite;
+}
 /*======================================================================
 ##		History Section
 =======================================================================*/
