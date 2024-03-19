@@ -67,6 +67,17 @@ $(document).ready(function(){
                 }
             }
         }); //end of Pop Up
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("logoHeader").style.top = "0";
+  } else {
+    document.getElementById("logoHeader").style.top = "-96px";
+  }
+  
+  prevScrollpos = currentScrollPos;
+}
 
 
 
