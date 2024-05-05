@@ -20,16 +20,16 @@
         <link href="assets/css/owl.carousel.theme.min.css" rel="stylesheet">
         <link href="assets/css/ionicons.css" rel="stylesheet">
         <link href="assets/css/main.css" rel="stylesheet">
+        <link rel="stylesheet" href="GAS_style.css">
 
-        <!--[if lt IE 9]>
-          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     </head>
     <body>
 
     <!-- Site Header -->
-        <div class="site-header-bg">
+        <div id="logoHeader" class="site-header-bg">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-sm-12 text-center">
@@ -82,121 +82,139 @@
         </section> <!-- /#header -->
 
     <!-- Shop -->
-        <section class="shop">
-            <div class="container page-bgc">
-                <div class="row">
+    <section class="shop">
+        <div class="row">
                     <div class="col-sm-12">
                         <div class="title-box">
-                            <p>Get our</p>
-                            <h2 class="title mt0">Contract Manufacturing Services</h2>
+                            <p>About our</p>
+                            <h2 class="title mt0">Contract Manufacturing Services:</h2>
+                            <div class="filter-tope-group">
+                                <button style="border: 0px; background: #e91; height:50px" class="col-sm-4" data-filter=".Stamping">Stamping</button>
+                                <button style="border: 0px;background: #e81; height:50px" class="col-sm-4" data-filter=".Machining">Machining</button>
+                                <button style="border: 0px;background: #e91;height:50px" class="col-sm-4" data-filter=".Plastic">Plastic</button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="boxed">
-                        <div class="col-sm-6">
-                            <div class="shop-box">
-                                <img class="img-full img-responsive" src="assets/images/product1.jpg" alt="shop">
-                                <div class="shop-box-hover text-center">
-                                    <div class="c-table">
-                                        <div class="c-cell">
-                                            <h3>This is Type 1 Service</h3>
-                                            <p>This is ...</p>
-                                            
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="shop-box-title">
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <h4>Type 1 service</h4>
-                        
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                         <div class="col-sm-6">
-                            <div class="shop-box">
-                                <img class="img-full img-responsive" src="assets/images/product2.jpg" alt="shop">
-                                <div class="shop-box-hover text-center">
-                                    <div class="c-table">
-                                        <div class="c-cell">
-                                            <h3>Type 2 service</h3>
-                                            <p>This is used for ...</p>
-                                            
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="shop-box-title">
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <h4>Type 2 service</h4>
-                                     
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                         <div class="col-sm-6">
-                            <div class="shop-box">
-                                <img class="img-full img-responsive" src="assets/images/product3.jpg" alt="shop">
-                                <div class="shop-box-hover text-center">
-                                    <div class="c-table">
-                                        <div class="c-cell">
-                                            <h3>Type 3 service</h3>
-                                            <p>This is used for ...</p>
-                                            
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="shop-box-title">
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <h4>Type 3 service</h4>
-                                        
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                         <div class="col-sm-6">
-                            <div class="shop-box">
-                                <img class="img-full img-responsive" src="assets/images/product2.jpg" alt="shop">
-                                <div class="shop-box-hover text-center">
-                                    <div class="c-table">
-                                        <div class="c-cell">
-                                            <h3>Type 4 service</h3>
-                                            <p>This is used for ...</p>
-                                            
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="shop-box-title">
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <h4>Type 4 service</h4>
-                                        
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                       
+        </div>
 
-                       
-                    </div>
+        <div class="section green flex-center">
+            <div class="shop-box" style="margin: 40px 20px">
+                                
+                                <h2><span style="background: #e91;">Stamping</span>, Sheet Metal, Fabrication & Assembly Services</h2>
+                                <h6>&#x2022; Total 55 units of Japanese and branded stamping machines range from 30, 60, 80, 110, 150, 160, 200, 250, 400 and 600 tons, including high speed microstructure stamping machines.</h6>
+                                <h6>&#x2022; 12 units of CNC laser cutting, turret punching, and bending machines</h6>
+                                <h6>&#x2022; MIG, TIG, Laser Welding and Spot Welding</h6>
+                                <h6>&#x2022; Tool design and manufacturing</h6>
+                                <h6>&#x2022; QC capability – CMM, Cp, Cpk, etc..</h6>
+                                <h6>&#x2022; Contract Equipment Manufacturing </h6>
+                                <h6>&#x2022; One-stop End-to-end manufacturing solution: from initial DFM, first article, mass production and value-analysis value engineering VAVE.</h6>
+                                 
+                            </div>
+        </div>
+<div class="section container">
+     <img class="floating-image" src="./assets/images/one-stop.png" style="width:50px">
+  <div class="section slide blue">
+    <h1>Stamping — also called pressing — involves placing flat sheet metal, in either coil or blank form, into a stamping press.</h1>
+    <img src="./assets/images/stamping1.jpg">
+   
+  </div>
+  <div class="section slide gray">
+    <h1>Stamping — also called pressing — involves placing flat sheet metal, in either coil or blank form, into a stamping press.</h1>
+    <img src="./assets/images/stamping2.jpg">
+  </div>
+  <div class="section slide purple">
+    <h1>Stamping — also called pressing — involves placing flat sheet metal, in either coil or blank form, into a stamping press.</h1>
+    <img src="./assets/images/stamping3.jpg">
+  </div>
+  <div class="section slide orange">
+     <h1>Stamping — also called pressing — involves placing flat sheet metal, in either coil or blank form, into a stamping press.</h1>
+    <img src="./assets/images/stamping4.jpg">
+    </div>
+    <div class="section slide orange">
+     <h1>Stamping — also called pressing — involves placing flat sheet metal, in either coil or blank form, into a stamping press.</h1>
+    <img src="./assets/images/stamping5.jpg">
+    </div>
+    <div class="section slide orange">
+     <h1>Stamping — also called pressing — involves placing flat sheet metal, in either coil or blank form, into a stamping press.</h1>
+    <img src="./assets/images/stamping6.jpg">
+    </div>
+    
+</div>
+            <div class="section green final">
+                <div class="shop-box" style="margin: 40px 20px">
+                                
+                                <h2><span style="background: #e81;">Precision Machining</span>, Casting &Assembly Services</h2>
+                                <h5>&#x2022; ISO9001, ISO14001 & IATF16949 certified manufacturing factories located in Malaysia and China</h5>
+                                <h5>&#x2022; Provide precise machine parts by using CNC machine centres and CNC turning machines</h5>
+                                <h5>&#x2022; In-house advance gravity Aluminium casting machine, T6 heat treatment chamber and sand blasting helps our clients developing desired casting products.</h5>
+                                <h5>&#x2022; Complete end-to-end supply chain from raw material sourcing, iron/steel casting, engineering VAVE, Quality Control, machining production and surface treatment.</h5>
+                               
+                                 
                 </div>
             </div>
-        </section>
+
+<div class="section container">
+    <img class="floating-image" src="palmary.png" style="width:130px">
+  <div class="section slide orange">
+    <h2 style="width: 25%">What is machining? Machining is the fabrication process of shaping metal by removing unwanted material from it. This process can be performed in many different ways. </h2>
+    <img src="./assets/images/Machining1.jpg" style="padding: 30px">
+  </div>
+  <div class="section slide gray">
+    <h2>What is machining? Machining is the fabrication process of shaping metal by removing unwanted material from it. This process can be performed in many different ways.</h2>
+    <img src="./assets/images/Machining2.jpg">
+  </div>
+  <div class="section slide orange">
+    <h3>What is machining? Machining is the fabrication process of shaping metal by removing unwanted material from it. This process can be performed in many different ways.</h3>
+    <img src="./assets/images/Machining3.jpg">
+  </div>
+  <div class="section slide gray">
+    <h1>What is machining? Machining is the fabrication process of shaping metal by removing unwanted material from it. This process can be performed in many different ways.</h1>
+    <img src="./assets/images/Machining4.jpg">
+  </div>
+  <div class="section slide purple">
+    <h1>What is machining? Machining is the fabrication process of shaping metal by removing unwanted material from it. This process can be performed in many different ways.</h1>
+    <img src="./assets/images/Machining5.jpg">
+  </div>
+  <div class="section slide purple">
+    <h1>What is machining? Machining is the fabrication process of shaping metal by removing unwanted material from it. This process can be performed in many different ways.</h1>
+    <img src="./assets/images/Machining6.jpg">
+  </div>
+  <div class="section slide orange">
+        <h1>Machining 7</h1>
+        <img src="./assets/images/Machining7.jpg">
+    </div> 
+</div>
+
+    <div class="section green final">
+                <div class="shop-box" style="padding: 20px 30px">
+                                
+                                <h2><span style="background: #e91;">Plastic </span>Moulding & OEM Product Assembly</h2>
+                                <h5>&#x2022; ISO9001, ISO14001 & IATF16949 certified manufacturing factories located in Malaysia</h5>
+                                <h5>&#x2022; Plastic part moulding and product assembly services</h5>
+                                <h5>&#x2022; Value-added secondary processes: silk-screen printing and plastic chrome plating</h5>
+                                
+                                 
+                </div>
+    </div>
+    <div class="section container">
+            <div class="section slide orange">
+            <h1>Plastic 1</h1>
+            <img src="./assets/images/plastic1.jpg">
+            </div>
+            <div class="section slide gray">
+            <h1>Plastic 2</h1>
+            <img src="./assets/images/plastic2.jpg">
+            </div>
+            <div class="section slide purple">
+            <h1>Plastic 3</h1>
+            <img src="./assets/images/plastic3.jpg">
+            </div>
+            <div class="section slide orange">
+                <h1>Plastic 4</h1>
+            </div>
+    </div>
+    <div class="section green final"><h1>Contact US!</h1></div>
+ </section>
 
     <!-- Footer -->
         <footer class="footer text-center">
@@ -209,6 +227,95 @@
         <script src="assets/js/jquery.magnific-popup.min.js"></script>
         <script src="assets/js/owl.carousel.min.js"></script>
         <script src="assets/js/script.js"></script>
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!-- Isotope Library -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+         <script>
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("logoHeader").style.top = "0";
+  } else {
+    document.getElementById("logoHeader").style.top = "-90px";
+  }
+  
+  prevScrollpos = currentScrollPos;
+}
+</script>
+<script>
+    console.clear();
+
+gsap.registerPlugin(ScrollTrigger);
+const containers = gsap.utils.toArray(".section.container");
+containers.forEach((cont, i) => {
+  const { innerHeight } = window;
+  const slides = gsap.utils.toArray(".slide", cont);
+  const numSlides = slides.length;
+  const marginValue = innerHeight * numSlides;
+  const finalText = slides[numSlides - 1].querySelector("h1");
+  const imgElement = cont.querySelector(".floating-image")
+  gsap.set(cont, {
+    marginBottom: marginValue
+  });
+  ScrollTrigger.create({
+    trigger: cont,
+    start: "top top",
+    end: "max",
+    pin: true,
+    pinSpacing: false,
+    markers: false,
+  });
+  const tl = gsap
+    .timeline({
+      scrollTrigger: {
+        trigger: cont,
+        start: "top top",
+        end: "+=" + (marginValue + innerHeight * 0.5),
+        scrub: true,
+        markers: false
+      }
+    })
+    .to(slides, {
+      xPercent: -(100 * (numSlides - 1)),
+      duration: numSlides,
+      ease: "none"
+    });
+  gsap.to(finalText, {
+    rotation: 360,
+    ease: "none",
+    scrollTrigger: {
+      trigger: finalText,
+      start: "left 75%",
+      end: "left 50%",
+      containerAnimation: tl,
+      scrub: true,
+      markers: {
+        startColor: "white",
+        endColor: "white"
+      }
+    }
+  });
+ // Move the image from slide one to slide two and then to slide three
+ gsap.to(imgElement, {
+    x: () => {
+      const slideWidth = slides[0].offsetWidth;
+      return slideWidth * (numSlides - 1); // Move to slide three
+    },
+    rotation: 1800,
+    ease: "bounce.out",
+    scrollTrigger: {
+      trigger: cont,
+      start: "top top",
+      end: "+=" + (marginValue + innerHeight * 10.2),
+      scrub: true,
+      markers: false
+    }
+  });
+
+});
+</script>
 
     </body>
 </html>
