@@ -279,6 +279,36 @@ sup {
 /*======================================================================
 ##		Product Section
 =======================================================================*/
+/* Basic styles for the buttons */
+.filter-tope-group button {
+    border: 0;
+    background: #e91; /* default red background */
+    height: 50px;
+    color: black; /* default text color */
+    transition: color 0.3s; /* smooth transition for color change */
+    width: 33.33%; /* to ensure they spread evenly across the container */
+    font-size: 16px; /* Adjust size as needed */
+}
+
+/* Hover styles for the buttons */
+.filter-tope-group button:hover {
+    color: white; /* changes text color to white */
+    background: linear-gradient(to bottom, #e91 0%, #e91 80%, white 80%, white 100%); /* gradient where the bottom is white */
+}
+
+/* Specific styles for different buttons based on additional properties */
+.filter-tope-group button[data-filter=".Machining"] {
+    background: #e81; /* different background for machining */
+}
+
+.filter-tope-group button[data-filter=".Machining"]:hover {
+    background: linear-gradient(to bottom, #e81 0%, #e81 80%, white 80%, white 100%); /* matching gradient for hover state */
+}
+
+.filter-tope-group button[data-filter=".Plastic"] {
+    background: #e91; /* you can adjust this if needed */
+}
+
 .product .section-bg{
 	background-color: #fff;
 }
@@ -543,7 +573,7 @@ sup {
 }
 @media(max-width: 520px){
 	.product-box.distribution{
-  height: 146vh;
+  height: 140vh;
 	position: relative;
 }
  .product-box.manufacture{
@@ -553,7 +583,7 @@ sup {
 }
 @media(max-width: 420px){
 	.product-box.distribution{
-  height: 200vh;
+  height: 150vh;
 	position: relative;
 }
 	.product-box.manufacture{
